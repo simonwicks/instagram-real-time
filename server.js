@@ -26,20 +26,20 @@ var clientID = 'f888edeb4c364cd3988975b0833250af',
  */
 Instagram.set('client_id', clientID);
 Instagram.set('client_secret', clientSecret);
-Instagram.set('callback_url', 'http://londonography.com/callback');
-Instagram.set('redirect_uri', 'http:londonography.com');
+Instagram.set('callback_url', 'http://londonography.herokuapp.com/callback');
+Instagram.set('redirect_uri', 'http://londonography.herokuapp.com');
 Instagram.set('maxSockets', 10);
 
 /**
  * Uses the library "instagram-node-lib" to Subscribe to the Instagram API Real Time
- * with the tag "hashtag" lollapalooza
+ * with the tag "hashtag" london
  * @type {String}
  */
 Instagram.subscriptions.subscribe({
   object: 'tag',
   object_id: 'london',
   aspect: 'media',
-  callback_url: 'londonography.com/callback',
+  callback_url: 'http://londonography.herokuapp.com/callback',
   type: 'subscription',
   id: '#'
 });
