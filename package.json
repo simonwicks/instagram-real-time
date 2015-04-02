@@ -1,17 +1,17 @@
 {
-  "name": "RealTimeInstagram",
+  "name": "Londonography",
   "version": "0.0.1",
-  "description": "Real time instagram",
-  "author": "Michael Lancaster",
+  "description": "Real Time Instagram HastagLondon",
+  "author": "Simon Wicks",
   "dependencies": {
     "socket.io": "0.9.16",
     "express": "3.5.1",
     "jade": "1.3.1",
     "request": "2.34.0",
-    "instagram-node-lib": "~0.1.1"
+    "instagram-node-lib": "0.1.1"
   },
   "engines": {
-    "node": "0.10.24",
+    "node": "0.10.x",
     "npm": "1.2.30"
   }
 }
