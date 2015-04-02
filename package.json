@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Real Time Instagram HastagLondon",
   "author": "Simon Wicks",
+
   "dependencies": {
     "socket.io": "0.9.16",
     "express": "3.5.1",
@@ -10,8 +11,9 @@
     "request": "2.34.0",
     "instagram-node-lib": "0.1.1"
   },
+
   "engines": {
     "node": "0.10.x",
-    "npm": "1.2.30"
+    "npm": "2.7.x"
   }
 }
