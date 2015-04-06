@@ -46,6 +46,25 @@ Instagram.subscriptions.subscribe({
 
 
 /**
+ * Uses the library "instagram-node-lib" to Subscribe to the Instagram API Real Time
+ * with the tag "hashtag" london_only
+ * @type {String}
+ */
+Instagram.subscriptions.subscribe({
+  object: 'tag',
+  object_id: 'london_only',
+  aspect: 'media',
+  callback_url: 'http://londonography.herokuapp.com/callback',
+  type: 'subscription',
+  id: '#'
+});
+
+
+
+
+
+
+/**
 // if you want to unsubscribe to any hashtag you subscribe
 // just need to pass the ID Instagram send as response to you
 Instagram.subscriptions.unsubscribe({ id: '3668016' });
