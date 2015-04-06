@@ -30,6 +30,9 @@ Instagram.set('callback_url', 'http://londonography.herokuapp.com/callback');
 Instagram.set('redirect_uri', 'http://londonography.herokuapp.com');
 Instagram.set('maxSockets', 10);
 
+
+
+
 /**
  * Uses the library "instagram-node-lib" to Subscribe to the Instagram API Real Time
  * with the tag "hashtag" london
@@ -43,6 +46,7 @@ Instagram.subscriptions.subscribe({
   type: 'subscription',
   id: '#'
 });
+
 
 
 /**
@@ -59,6 +63,25 @@ Instagram.subscriptions.subscribe({
   id: '#'
 });
 
+
+
+
+
+/**
+ * Uses the library "instagram-node-lib" to Subscribe to the Instagram API Real Time
+ * with the tag "geography" mid london
+ * @type {String}
+ */
+Instagram.subscriptions.subscribe({
+  object: 'geography',
+  aspect: 'media',
+  lat:'51.5073277', 
+  lng:'0.2015751', 
+  radius:'1000', 
+  callback_url: 'http://londonography.herokuapp.com/callback',
+  type: 'subscription',
+  id: '#'
+});
 
 
 
