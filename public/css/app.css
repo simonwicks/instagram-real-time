@@ -77,7 +77,7 @@ a:hover {
 .topFill {
   position: fixed;
   top: 0;
-  left: 13.5%;
+  left: 0;
   background: url(../images/top-fill2.png) repeat-x 0 0;
   background-size: cover;
   width: 100%;
