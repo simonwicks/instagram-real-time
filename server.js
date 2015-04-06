@@ -35,21 +35,33 @@ Instagram.set('maxSockets', 10);
 
 /**
  * Uses the library "instagram-node-lib" to Subscribe to the Instagram API Real Time
- * with the tag "geography" mid london
+ * with the tag "hashtag" london
  * @type {String}
  */
 Instagram.subscriptions.subscribe({
-  object: 'geography',
+  object: 'tag',
+  object_id: 'london',
   aspect: 'media',
-  lat:'51.5073277', 
-  lng:'0.2015751', 
-  radius:'1000', 
   callback_url: 'http://londonography.herokuapp.com/callback',
   type: 'subscription',
   id: '#'
 });
 
 
+
+/**
+ * Uses the library "instagram-node-lib" to Subscribe to the Instagram API Real Time
+ * with the tag "hashtag" london_only
+ * @type {String}
+ */
+Instagram.subscriptions.subscribe({
+  object: 'tag',
+  object_id: 'london_only',
+  aspect: 'media',
+  callback_url: 'http://londonography.herokuapp.com/callback',
+  type: 'subscription',
+  id: '#'
+});
 
 
 
