@@ -231,10 +231,10 @@ a:hover {
 #footer {
   position: fixed;
   bottom: 0;
-  background: url(../images/bg-footer.png) no-repeat 0;
+  background: url(../images/london-background.png) no-repeat 0;
   background-size: cover;
   width: 100%;
-  height: 302px;
+  height: 233px;
   z-index: 30;
   pointer-events: none;
 }
